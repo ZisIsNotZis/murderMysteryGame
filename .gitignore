@@ -1,0 +1,7 @@
+# Local agent runtime (keep .scratch/ work records tracked)
+.pi/
+
+# Local credentials
+.env
+.env.*
+!.env.example
