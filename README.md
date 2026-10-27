@@ -16,7 +16,7 @@
   <b>6 players + 1 host</b> · <b>150–180 minutes</b> · <b>print-and-play</b> · <b>AGPL-3.0</b>
 </p>
 
-> **Spoiler note:** This README contains no core solution. `spec.md`, `ying-yan.md`, and `playthrough.md` are full spoilers—players should not read them before the game.
+> **Spoiler note:** This README stays spoiler-free until the collapsed **Design notes** section. `spec.md`, `ying-yan.md`, and `playthrough.md` are full spoilers—players should not read them before the game.
 
 ---
 
@@ -26,7 +26,7 @@
 
 > Can a mystery misdirect the table **without ever lying to it**?
 
-Most fair-play mysteries hide information, bend a narrator's reliability, or rely on a last-minute fact. This one puts every decisive fact on the table and never asks the text to lie. The misdirection comes from the assumptions the table brings: that a body found at 20:30 died that evening, and that a household with two job titles must employ two people.
+Most fair-play mysteries hide information, bend a narrator's reliability, or rely on a last-minute fact. This one puts every decisive fact on the table and never asks the text to lie. The misdirection comes from the assumptions the table brings to a scene it can see completely.
 
 After the reveal, every sentence still reads literally true—and the earlier reading becomes the trick.
 
@@ -55,7 +55,7 @@ The host only answers factual questions, never reasons for the players and never
 
 - **A complete game kit** — 6 character books, 1 host manual, 32 clue cards, 7 timed stages, NPC scripts, and a branching reveal.
 - **Fair-play misdirection** — no withheld clues, no half-sentences, no unreliable narrator. The culprit's alibi is built entirely from public truths.
-- **Two independent reveals** — a time-of-death trick and a head-count trick. Both are foreshadowed; neither depends on the other.
+- **Two independent reveals** — two orthogonal tricks, each foreshadowed on its own. Neither depends on the other.
 - **22 load-bearing sentences** — each one is literally true under both the surface reading and the true reading. The full mapping is in [`spec.md`](spec.md).
 - **Host-ready structure** — fixed opening contract, clue-pool budgets, NPC Q&A cards, a 150-minute run sheet that stretches to 180, and a reveal script.
 - **An auditable process** — design constitution, specification, clue ledger, red-team reviews, consistency audits, and two blind-playtest transcripts are all in the repository.
@@ -93,7 +93,7 @@ The dependency direction is intentional: `idea.md` states the rules, `spec.md` t
 
 | File | Audience | Spoilers |
 |---|---|---|
-| [`README.md`](README.md) | Players, hosts, evaluators | No core solution |
+| [`README.md`](README.md) | Players, hosts, evaluators | No core solution (design notes collapsed) |
 | [`script/host-manual.md`](script/host-manual.md) | Host | Full |
 | [`script/book-*.md`](script/) | The matching player | That character's view |
 | [`script/clue-cards.md`](script/clue-cards.md) | Host | Full |
@@ -133,6 +133,23 @@ Issues and pull requests are welcome—especially real-table playtest reports, f
 - **Say what you tested.** A report is more useful with the stage, the table composition, and the exact sentence that caused the problem.
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full checklist.
+
+---
+
+## Design notes (spoilers)
+
+<details>
+<summary><strong>Open the design notes</strong></summary>
+
+- **Main trick, “Death in the Afternoon”**: the script never states a time of death. Players default to “found at 20:30 ≈ died at 20:30” and anchor every alibi to the evening. The truth is that the victim died in the afternoon; the evening’s conflicts all happen after death. The culprit’s alibi is made of public truths, and its very completeness proves that nobody saw the afternoon.
+- **Secondary trick, “One Person, Two Jobs”**: the servant Lao Chen is both butler and gardener. The text never asserts that these are two people; the table’s assumption that job titles equal headcount adds a phantom gardener.
+- **Both readings are true**: 22 load-bearing sentences read literally true under the surface reading and under the true reading. No character lies, and the victim never makes a statement about the time of death.
+- **Fairness**: the main trick is reachable through physical evidence, witness evidence, and paper records; clue cards are background noise, not spotlights. The host never suppresses a correct inference or invents a fact.
+- **Structure**: the two tricks are orthogonal—a time ledger and a headcount ledger—and the reveal always opens the timeline first, then the headcount.
+
+The full design is in [`spec.md`](spec.md); the line-by-line walkthrough is [`ying-yan.md`](ying-yan.md).
+
+</details>
 
 ---
 

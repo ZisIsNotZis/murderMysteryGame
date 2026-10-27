@@ -48,7 +48,7 @@ Do not add a lie, withhold a clue, or introduce a fact that is not in the object
 
 ## Spoilers
 
-The public overview files (`README.md`, `README.zh-CN.md`) contain no core solution. `spec.md`, `ying-yan.md`, `playthrough.md`, and `.scratch/` are full spoilers. When linking to them from a public discussion, label the link.
+The public overview files (`README.md`, `README.zh-CN.md`) contain no core solution outside their collapsed design notes. `spec.md`, `ying-yan.md`, `playthrough.md`, and `.scratch/` are full spoilers. When linking to them from a public discussion, label the link.
 
 ## License
 
