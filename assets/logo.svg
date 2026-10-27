@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">The Birthday Banquet</title>
+  <desc id="desc">A crimson seal with a round banquet table, six seats, and a single wine cup.</desc>
+  <rect x="3" y="3" width="122" height="122" rx="26" fill="#7c1717"/>
+  <rect x="11" y="11" width="106" height="106" rx="19" fill="none" stroke="#d9b45b" stroke-width="2"/>
+  <path d="M26 40h8M26 52h8M26 64h8M26 76h8M26 88h8" stroke="#d9b45b" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <path d="M94 40h8M94 52h8M94 64h8M94 76h8M94 88h8" stroke="#d9b45b" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <ellipse cx="64" cy="70" rx="28" ry="15" fill="#f2e3c2"/>
+  <ellipse cx="64" cy="67" rx="28" ry="15" fill="#fbf1dc"/>
+  <g fill="#7c1717">
+    <circle cx="64" cy="34" r="5"/>
+    <circle cx="91" cy="49" r="5"/>
+    <circle cx="91" cy="84" r="5"/>
+    <circle cx="64" cy="99" r="5"/>
+    <circle cx="37" cy="84" r="5"/>
+    <circle cx="37" cy="49" r="5"/>
+  </g>
+  <g fill="#d9b45b">
+    <circle cx="64" cy="34" r="2"/>
+    <circle cx="91" cy="49" r="2"/>
+    <circle cx="91" cy="84" r="2"/>
+    <circle cx="64" cy="99" r="2"/>
+    <circle cx="37" cy="84" r="2"/>
+    <circle cx="37" cy="49" r="2"/>
+  </g>
+  <path d="M55 58h18l-2 9a7 7 0 0 1-14 0z" fill="#d9b45b"/>
+  <path d="M64 73v9M57 84h14" stroke="#d9b45b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M78 59c4 0 5 4 1 6" fill="none" stroke="#d9b45b" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="86" cy="38" r="3.5" fill="#b3261e"/>
+</svg>
