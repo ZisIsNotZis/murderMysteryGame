@@ -1,165 +1,177 @@
-# 《寿宴》· 6 人本格剧本杀
+<p align="center">
+  <img src="assets/logo.svg" width="112" height="112" alt="The Birthday Banquet logo">
+</p>
 
-> 一个由 AI 编写、可直接打印开桌的完整剧本杀 POC：全篇角色零谎话，误导不靠隐瞒，而靠玩家自己的默认假设。
+<p align="center">
+  <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
+</p>
 
-**状态**：v1.0 · POC 完成并试玩验收　|　**人数**：6 名玩家 + 1 名主持人　|　**时长**：150–180 分钟　|　**许可**：AGPL-3.0
+<h1 align="center">寿宴 · The Birthday Banquet</h1>
 
-> **剧透提示**：本 README 的「玩法」「仓库结构」不含核心真相；「设计」一节默认折叠，展开即剧透。`spec.md`、`ying-yan.md`、`playthrough.md` 含完整剧透，玩家开桌前不要读。
+<p align="center"><strong>A complete six-player murder mystery you can print and play tonight.</strong></p>
 
----
+<p align="center">Nobody lies. The murder still hides in plain sight.</p>
 
-## 这是什么
+<p align="center">
+  <b>6 players + 1 host</b> · <b>150–180 minutes</b> · <b>print-and-play</b> · <b>AGPL-3.0</b>
+</p>
 
-《寿宴》是一份完整的、可实体开桌的民国宅门剧本杀：6 本角色本、1 本主持人手册、32 张线索卡，以及背后的诡计规格书和验证记录。
-
-它的目标不是做一个「能读的故事」，而是验证 AI 能否写出**公平的误导**：
-
-- 所有信息都摆在桌上，没有藏线索、截半句、碎片记忆或叙述者撒谎；
-- 表层读法完整、普通、自洽，玩家会得到一版「标准晚宴谋杀」；
-- 揭示后，前文每句话在真相读法下仍然字面为真，而且更成立；
-- 主持人不需要临场编事实，也不需要阻止玩家推理。
-
-作者已试玩验收，认为作为「AI 写剧本杀」的 demo 目标达成。完整的真人整桌实测仍建议补 1–2 场（见「已知边界」）。
-
-### 特色
-
-- **双层诡计，零假话**：主诡计与副诡计各翻一次面，复盘有两次「原来如此」。
-- **误导来自认知框架**：凶手没有说谎，他的不在场证明全部由公开真话构成；破绽正是「所有人都没看见下午」。
-- **开桌即用**：无需安装、无需联网、无需 APP，打印后按主持人手册跑七阶段。
-- **过程可审计**：设计宪法、规格书、双读映射表、线索台账、红队审计与两场盲测实录全部在仓库里。
+> **Spoiler note:** This README contains no core solution. `spec.md`, `ying-yan.md`, and `playthrough.md` are full spoilers—players should not read them before the game.
 
 ---
 
-## 快速开始
+## Why this exists
 
-### 你需要准备
+《寿宴》 (*The Birthday Banquet*) is a finished, table-ready Chinese murder-mystery script set in a Republican-era family mansion. It is also a proof of concept for a harder question:
 
-| 物品 | 数量 | 说明 |
-|---|---|---|
-| 玩家 | 6 人 | 建议至少 2 人玩过 1–2 次剧本杀 |
-| 主持人（DM） | 1 人 | 需要提前通读 `script/host-manual.md` |
-| 打印材料 | 1 套 | 6 本角色本 + 主持人手册 + 32 张线索卡 |
-| 纸笔 | 若干 | 玩家记时间线与人物关系 |
-| 计时器 | 1 个 | 按手册的七阶段跑表控场 |
+> Can a mystery misdirect the table **without ever lying to it**?
 
-可选：信封或卡套（分角色本与线索卡）、便签、名牌。卡面目前是精简文字版，实体化时可加美术与质感。
+Most fair-play mysteries hide information, bend a narrator's reliability, or rely on a last-minute fact. This one puts every decisive fact on the table and never asks the text to lie. The misdirection comes from the assumptions the table brings: that a body found at 20:30 died that evening, and that a household with two job titles must employ two people.
 
-### 开桌流程
-
-1. **主持人预习**：读 `script/host-manual.md`，重点看开场契约、七阶段跑表、卡池发放、NPC 问答卡与复盘双分支。主持人的原则是只答事实、不替玩家推理、不临时改设定。
-2. **玩家入座**：分配 6 个角色，发放对应角色本。玩家只读自己的本，不翻别人的本，也不要在开桌前读 `spec.md`。
-3. **按手册推进**：开场与契约宣读 → 自我介绍 → 第一轮搜证 → 讨论 → 第二轮搜证 → 指认 → 复盘。总时长 150–180 分钟。
-4. **复盘**：按手册固定次序先翻时间线，再翻人数账；已被提前翻面的桌走分支 (a)/(b)。复盘时可以当场抽验任意一句原文，确认它在两种读法下都为真。
-
-### 第一次当主持人
-
-- 先完整读一遍 `script/host-manual.md`，再读 `spec.md` 的真相时间线与流程设计。
-- 不要背全部角色本；只需熟悉「七阶段要发什么、NPC 被问什么答什么、哪些话不能说」。
-- 卡池与线索台账已按轮次和域分好，照表发放即可。
-- 玩家提前接近真相是允许的：手册里有提前翻面的压缩分支，不需要救场式否定。
+After the reveal, every sentence still reads literally true—and the earlier reading becomes the trick.
 
 ---
 
-## 仓库结构
+## Quick start
+
+No install. No server. No app. Print and sit down.
+
+1. **Read the host manual.** Start with the opening contract and the seven-stage run sheet in [`script/host-manual.md`](script/host-manual.md).
+2. **Print one set.** Six character books, the host manual, and the 32 clue cards from [`script/`](script/).
+3. **Run the table.** Opening → introductions → two clue rounds → accusation → reveal. Use the host's fixed script, NPC answer cards, and early-reveal branch.
+
+| You need | Details |
+|---|---|
+| Players | 6; ideally at least 2 have played a murder mystery before |
+| Host | 1; read the manual beforehand |
+| Materials | 6 character books, host manual, 32 clue cards |
+| Extras | Paper, pens, a timer, optional envelopes or card sleeves |
+
+The host only answers factual questions, never reasons for the players and never invents a fact. If the table solves it early, the manual includes a compressed reveal branch instead of a rescue.
+
+---
+
+## What it can do now
+
+- **A complete game kit** — 6 character books, 1 host manual, 32 clue cards, 7 timed stages, NPC scripts, and a branching reveal.
+- **Fair-play misdirection** — no withheld clues, no half-sentences, no unreliable narrator. The culprit's alibi is built entirely from public truths.
+- **Two independent reveals** — a time-of-death trick and a head-count trick. Both are foreshadowed; neither depends on the other.
+- **22 load-bearing sentences** — each one is literally true under both the surface reading and the true reading. The full mapping is in [`spec.md`](spec.md).
+- **Host-ready structure** — fixed opening contract, clue-pool budgets, NPC Q&A cards, a 150-minute run sheet that stretches to 180, and a reveal script.
+- **An auditable process** — design constitution, specification, clue ledger, red-team reviews, consistency audits, and two blind-playtest transcripts are all in the repository.
+
+The game is in Chinese. The repository's design notes and this English overview make the method legible to non-Chinese readers; they are not a translated playable edition.
+
+---
+
+## Architecture
+
+This is a writing project, not a software product. The repository is organized as a content pipeline: a constitution, a specification, the playable script, and the evidence that the script passes its own rules.
 
 ```text
 .
-├── README.md                 # 本文件：项目说明与开桌入口（无核心剧透）
-├── idea.md                   # 设计宪法：什么算公平的误导、十五条红线
-├── spec.md                   # 诡计规格书：真相/表层时间线、22 条双读映射、角色、台账、流程、写作锁
+├── README.md                  # Public overview (no core spoilers)
+├── README.zh-CN.md            # Chinese overview
+├── CONTRIBUTING.md            # How to propose a fix or a playtest report
+├── assets/
+│   └── logo.svg               # Project mark
+├── idea.md                    # Design constitution: what counts as fair misdirection
+├── spec.md                    # Full spoiler spec: timelines, dual readings, clues, rules
 ├── script/
-│   ├── book-zonghan.md       # 沈宗翰本（长子）
-│   ├── book-yurru.md         # 顾玉茹本（长媳）
-│   ├── book-shuning.md       # 沈书宁本（女儿）
-│   ├── book-zongqi.md        # 沈宗麒本（次子）
-│   ├── book-mutang.md        # 周慕堂本（账房）
-│   ├── book-bai.md           # 白医生本（家庭医生）
-│   ├── host-manual.md        # 主持人手册：契约、跑表、卡池、NPC 问答、复盘分支
-│   └── clue-cards.md         # 32 张线索卡面（两轮、四域）
-├── ying-yan.md               # 沉浸式导读：重走玩家被带进坑里的路（重度剧透）
-├── playthrough.md            # 两场盲测对局实录（重度剧透）
-├── .scratch/                 # 过程档案：脑暴、红队报告、盲测原始记录、流水线脚本
-└── LICENSE                   # AGPL-3.0
+│   ├── book-*.md              # Six character books
+│   ├── host-manual.md         # Contract, run sheet, NPC answers, reveal branches
+│   └── clue-cards.md          # All 32 clue cards
+├── ying-yan.md                # Immersive spoiler walkthrough of the misdirection
+├── playthrough.md             # Two blind playtests, edited for reading
+├── .scratch/                  # Process archive: reviews, audits, raw transcripts, scripts
+└── LICENSE                    # AGPL-3.0
 ```
 
-### 文档怎么读
+The dependency direction is intentional: `idea.md` states the rules, `spec.md` turns them into a testable design, `script/` is the production text, and `.scratch/` records the checks. The public narrative documents—this README, `ying-yan.md`, and `playthrough.md`—point back to those sources rather than restating them.
 
-| 文件 | 给谁看 | 剧透 |
+### What to read
+
+| File | Audience | Spoilers |
 |---|---|---|
-| `README.md` | 试玩者、主持人、评估者 | 无核心真相 |
-| `script/host-manual.md` | 主持人 | 完整 |
-| `script/book-*.md` | 对应玩家 | 各自视角 |
-| `script/clue-cards.md` | 主持人 | 完整 |
-| `idea.md` | 想看设计方法的人 | 轻度 |
-| `spec.md` | 作者、修订者、想复盘设计的人 | 完整 |
-| `ying-yan.md` | 想体验「被误导—翻面」过程的读者 | 完整 |
-| `playthrough.md` | 想看实际对局如何走的人 | 完整 |
-| `.scratch/` | 想审查验证过程的人 | 完整 |
+| [`README.md`](README.md) | Players, hosts, evaluators | No core solution |
+| [`script/host-manual.md`](script/host-manual.md) | Host | Full |
+| [`script/book-*.md`](script/) | The matching player | That character's view |
+| [`script/clue-cards.md`](script/clue-cards.md) | Host | Full |
+| [`idea.md`](idea.md) | Anyone interested in the design method | Light |
+| [`spec.md`](spec.md) | Authors, revisers, design reviewers | Full |
+| [`ying-yan.md`](ying-yan.md) | Readers who want the guided reveal | Full |
+| [`playthrough.md`](playthrough.md) | Readers who want to see a table in motion | Full |
+| [`.scratch/`](.scratch/) | Anyone auditing the validation trail | Full |
 
 ---
 
-## 设计（剧透，点击展开）
+## How to develop
 
-<details>
-<summary><strong>展开查看双层诡计与设计原则</strong></summary>
+The script has hard invariants. Before changing a line, read:
 
-- **主诡计《死亡在下午》**：全篇不声明死亡时刻。玩家默认「发现时刻（20:30）≈ 死亡时刻」，于是把所有行踪和不在场证明都锚在晚间。真相是死者死于当天下午未申之交（约 15:00），晚宴全程人已经死了，晚间每一场「冲突」都是死讯之后的余波。凶手的诡计全部由公开真话构成：他精心做的晚间不在场证明，恰恰反证了「全桌都没看见下午」。
-- **副诡计《一人双职》**：仆役老陈同时担任管家与园丁。全篇从不断言这是两个人，玩家按「职务数 = 人数」的人事图式自己多算出一个「园丁」。
-- **双读皆真**：22 条承重句在表层读法与真相读法下都字面为真。全篇角色零谎话，死者零「死亡时刻」声明。
-- **公平性**：主诡计的物证线、人证线、纸面加固线多路可达；线索卡是「背景噪音」而不是聚光灯；主持人不捂嘴、不临时补设定。
-- **结构**：两诡计正交（时间账 × 人数账），复杂度收敛；复盘固定先时间线、后人数账。
+1. [`spec.md`](spec.md) §7 — the writing locks: one name per person, forbidden assertions, and how to keep a clue in the background.
+2. [`spec.md`](spec.md) §1.2 — the hour-by-hour objective fact table. Every character action must exist there.
+3. [`spec.md`](spec.md) §9 — the revision log and the changes each revision pulled with it.
 
-完整设计见 `spec.md`，逐句导读见 `ying-yan.md`。
+After a change, re-check at least:
 
-</details>
+- forbidden words and naming consistency (butler/gardener, death-time claims, head-count claims);
+- all 22 dual-reading mappings;
+- the M/S/K clue ledger;
+- one blind playtest, watching for early reveals, an unclosable clue chain, or host improvisation.
 
----
-
-## 验证记录
-
-项目按「规格 → 红队 → 写作 → 审计 → 盲测」的 agentic 流水线完成，证据保留在 `.scratch/`。
-
-1. **规格红队**：公平性、结构、表层三路独立审查，修复 1 个 P0（凶手一句双假话，击穿「零谎话」最高硬约束）。
-2. **成稿一致性审计**：三路审计（指称、违禁句、双读真值）。结果：指称与违禁句命中为零，22 条映射双读真值全过，M/S/K 台账 23 条全部落位。
-3. **盲测 1（普通桌）**：无人提前翻面，表层普通性成立；凶手仍被 4/6 票正确指认；「幻影园丁」存活约 3 分钟后被合并；仅 2 次轻度流程救场。
-4. **盲测 2（老手桌）**：老手在第②阶段凭尸温换算提前翻面；翻面后 K 链仍需第二轮搜证合龙；主持人分支 (a)「抽验确认」实测可用。
-5. **作者试玩**：作者实际体验后接受本作作为 AI 写剧本杀的 POC，目标达成。
-
-盲测由 LLM 扮演玩家和主持人完成，不是真人整桌实测；它能验证文本自洽、信息可达与流程分支，但不能替代真人的阅读节奏、社交动态和主持人临场压力测试。
+The stage scripts in `.scratch/` are historical records of the agent workflow, not a one-command test suite. They document the process and are not guaranteed to run in today's environment.
 
 ---
 
-## 已知边界
+## How to contribute
 
-- **未做真人整桌实测**：建议开 1–2 场，按 `.scratch/blindtest-1.md` 的观察维度记录：提前翻面率、20:40 目击披露率、副诡计合并时刻、主持人救场次数。
-- **卡面为精简版**：实体化时可扩充美术、排版与材质，但不得增删事实句（见 `spec.md` §7 写作规范锁）。
-- **时长偏紧**：150 分钟是下限，6 人双诡计建议预留 180 分钟；主持人负载主要在前两轮搜证与复盘。
-- **不是软件产品**：本项目是 print-and-play 的剧本与文档，没有 Web/APP、语音或自动计分。
-- **流水线脚本是历史存档**：`.scratch/stage*.js` 依赖当时的 agent 运行环境，不保证今日可直接复跑；它们记录的是流程，不是一键测试。
+Issues and pull requests are welcome—especially real-table playtest reports, fairness critiques, and typo or consistency fixes.
 
----
+- **Do not post the solution in an issue title or in a public player-facing thread.** Use the spoiler conventions in [`CONTRIBUTING.md`](CONTRIBUTING.md).
+- **Keep the invariants.** A fix that adds a lie, withholds a clue, or changes a fact must also update `spec.md` and the affected ledgers.
+- **Say what you tested.** A report is more useful with the stage, the table composition, and the exact sentence that caused the problem.
 
-## 修改与再验证
-
-修改剧本前先读：
-
-1. `spec.md` §7「写作规范锁」（唯一指称、禁止句、线索噪音化写法）；
-2. `spec.md` §1.2「逐时客观事实表」（任何角色口中的行为都必须能在表中找到）；
-3. `spec.md` §九「修订记录」（已有修订的原因与联动改动）。
-
-改完后至少重跑：
-
-- 违禁词与指称检查（管家/园丁/死亡时刻声明/人数断言）；
-- 22 条双读映射的真值抽验；
-- M/S/K 线索台账落位检查；
-- 一场盲测，观察是否出现提前翻面、无法收束的 K 线或主持人临时补设定。
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full checklist.
 
 ---
 
-## 许可
+## Roadmap
 
-本项目文本与代码以 **AGPL-3.0** 发布，详见 [`LICENSE`](LICENSE)。公开演出、商用开桌或改编，请遵循该许可；如用于商业发行，建议先联系仓库作者确认署名与授权方式。
+### Implemented
+
+- **v1.0 complete kit** — six character books, host manual, 32 clue cards, seven-stage flow, and both reveals.
+- **Specification red team** — fairness, structure, and surface-reading reviews; one P0 fixed (a culprit line that broke the zero-lie rule).
+- **Consistency audit** — naming, forbidden assertions, and 22 dual-reading truth checks; all M/S/K ledger entries placed.
+- **Two blind playtests** — a standard table and an experienced table, both run with LLM players and a host. Transcripts are in [`playthrough.md`](playthrough.md).
+- **Author playtest** — the author played the finished script and accepted it as a completed proof of concept.
+
+### Planned
+
+- [ ] One or two real human table tests, recorded against the observation criteria in [`.scratch/blindtest-1.md`](.scratch/blindtest-1.md).
+- [ ] A physical card layout with art and better materials—without adding, removing, or changing any fact sentence.
+- [ ] Revisions driven by real-table evidence, with every change logged in `spec.md` §9.
+
+### Future vision
+
+The long-term goal is a repeatable method for AI-assisted fair-play mysteries: write the truth first, make every sentence survive both readings, then let the table discover the frame it brought with it. This script is the proof of concept. The next step is not more features—it is evidence from real tables, and a revision trail that shows exactly what changed when the evidence arrived.
 
 ---
 
-<sub>由 agentic 流水线完成：脑暴 → 规格 → 红队 → 并行写作 → 一致性审计 → 双盲测 → 人工试玩验收。</sub>
+## Known limits
+
+- **No full human-table test yet.** The two blind tests used LLM players and a host. They validate text consistency, information reachability, and branch behavior, but not human reading pace, social dynamics, or host pressure.
+- **Clue cards are text-only.** They are designed for print, not final art. Physical production may add layout and texture, but not new facts.
+- **The runtime is tight.** 150 minutes is the floor; 180 is the safer booking for six players and two tricks.
+- **This is not a software product.** There is no web app, voice channel, or automatic scoring.
+- **The pipeline scripts are archival.** They record the process, not a supported build.
+
+---
+
+## License
+
+Text and code in this repository are released under **AGPL-3.0**. See [`LICENSE`](LICENSE). Public performances, commercial table runs, and adaptations should follow that license; for commercial publication, contact the repository author about attribution and permission.
+
+---
+
+<sub>Built through an agentic pipeline: brainstorm → specification → red team → parallel writing → consistency audit → blind playtests → author playtest.</sub>
