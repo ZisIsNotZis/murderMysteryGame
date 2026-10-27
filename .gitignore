@@ -13,3 +13,17 @@ Thumbs.db
 *.swp
 *.swo
 *.bak
+.idea/
+.vscode/
+
+# Build and dependency junk (the .scratch/ stage scripts are plain Node scripts)
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+dist/
+build/
+coverage/
+
