@@ -187,7 +187,7 @@ The long-term goal is a repeatable method for AI-assisted fair-play mysteries: w
 
 ## License
 
-Text and code in this repository are released under **AGPL-3.0**. See [`LICENSE`](LICENSE). Public performances, commercial table runs, and adaptations should follow that license; for commercial publication, contact the repository author about attribution and permission.
+Text and code in this repository are released under **AGPL-3.0**, © 2026 ZisIsNotZis. See [`LICENSE`](LICENSE). Public performances, commercial table runs, and adaptations should follow that license; for commercial publication, contact the repository author about attribution and permission.
 
 ---
 
