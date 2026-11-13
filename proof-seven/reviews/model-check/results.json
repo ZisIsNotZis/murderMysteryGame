@@ -1,0 +1,143 @@
+{
+  "scope": "digital SVG render, deterministic layer permutations, and nested-leaf imposition; no physical printer or human playtest",
+  "svg_pixel_size": [
+    760,
+    500
+  ],
+  "transparent_corner_alpha": {
+    "A": 0,
+    "B": 0,
+    "C": 0
+  },
+  "crossing_pixels": {
+    "left": [
+      183,
+      205
+    ],
+    "right": [
+      365,
+      233
+    ]
+  },
+  "layer_orders": [
+    {
+      "bottom_to_top": "ABC",
+      "matches_both_crossings": true
+    },
+    {
+      "bottom_to_top": "ACB",
+      "matches_both_crossings": false
+    },
+    {
+      "bottom_to_top": "BAC",
+      "matches_both_crossings": false
+    },
+    {
+      "bottom_to_top": "BCA",
+      "matches_both_crossings": false
+    },
+    {
+      "bottom_to_top": "CAB",
+      "matches_both_crossings": false
+    },
+    {
+      "bottom_to_top": "CBA",
+      "matches_both_crossings": false
+    }
+  ],
+  "body_orders_matching_published_joins": [
+    [
+      "Q07",
+      "Q08",
+      "Q04",
+      "Q01"
+    ]
+  ],
+  "panel_edge_ink_y": {
+    "Q07": {
+      "left": [],
+      "right": [
+        84,
+        85
+      ]
+    },
+    "Q08": {
+      "left": [
+        84,
+        85
+      ],
+      "right": [
+        109,
+        110,
+        111
+      ]
+    },
+    "Q04": {
+      "left": [
+        108,
+        109,
+        110
+      ],
+      "right": [
+        148,
+        149,
+        150
+      ]
+    },
+    "Q01": {
+      "left": [
+        149,
+        150,
+        151
+      ],
+      "right": []
+    }
+  },
+  "body_orders_matching_rendered_drawing_edges": [
+    [
+      "Q07",
+      "Q08",
+      "Q04",
+      "Q01"
+    ]
+  ],
+  "page_cards": {
+    "1": "Q05",
+    "2": "Q02",
+    "3": "Q07",
+    "4": "Q08",
+    "5": "Q04",
+    "6": "Q01",
+    "7": "Q06",
+    "8": "Q03"
+  },
+  "faces": {
+    "outer-front": [
+      8,
+      1
+    ],
+    "outer-back": [
+      2,
+      7
+    ],
+    "inner-front": [
+      6,
+      3
+    ],
+    "inner-back": [
+      4,
+      5
+    ]
+  },
+  "nested_leaf_read_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "private_page": "public replacement only; actual private letter absent from all sample faces"
+}

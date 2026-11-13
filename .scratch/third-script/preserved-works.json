@@ -1,0 +1,233 @@
+{
+  "date": "2026-11-13",
+  "files": [
+    {
+      "path": "harbor/action-cards.md",
+      "sha256": "a010155b1a5c120315f39a8205803f32e2a8154cbe9f78cb6172b0a26ce0af9a"
+    },
+    {
+      "path": "harbor/characters/chen-yan.md",
+      "sha256": "57a4cafcdf03ab461d17b06b8a0d279870fe7b80f6d546093a96b10ca9a44249"
+    },
+    {
+      "path": "harbor/characters/he-yusheng.md",
+      "sha256": "9b7dc6e98fcd63d740003df77c88af84f1427ceb41b58a4141dac15ac6206cc3"
+    },
+    {
+      "path": "harbor/characters/lin-zhao.md",
+      "sha256": "6ed77b14dba255c5573018407866470ded6addeeaa6e30b83af8c14e57181408"
+    },
+    {
+      "path": "harbor/characters/tang-sui.md",
+      "sha256": "314a0c68224f498ed709e85c3ecf22c45d795dd216b5fa1b16694c296f458ed9"
+    },
+    {
+      "path": "harbor/characters/xu-qinghe.md",
+      "sha256": "5b06a11da19770c3191b5770661845d9739fd2ec872817c748e6dfbfd1fd9104"
+    },
+    {
+      "path": "harbor/characters/zhou-du.md",
+      "sha256": "347e02fa42f31446bff781205665c925f2209fd3a9e030abc24dce40c0268871"
+    },
+    {
+      "path": "harbor/design.md",
+      "sha256": "80793ea738a2de8a3c075303b16dc61d925ce6b509374adaf1e5fd16f5630ca8"
+    },
+    {
+      "path": "harbor/endings.md",
+      "sha256": "714b24c65f7af0ac3c6c55127b14f53f523a4c6b5f9d1253068311f939207af8"
+    },
+    {
+      "path": "harbor/evidence-cards.md",
+      "sha256": "27c9a905c76c6d28f7de263bfc530ab27e26bf9d37ac748b1512df1c878f28c8"
+    },
+    {
+      "path": "harbor/host-manual.md",
+      "sha256": "c5bc2532bddae72d8e99e12dcce8f49ecdb95681e128a221f79bf0a5ef74c9ef"
+    },
+    {
+      "path": "harbor/opening-sample.md",
+      "sha256": "7e090a65ed0794db8f30c6eaa8cc12c088b2d67152158f25db040605bb588aad"
+    },
+    {
+      "path": "harbor/player-guide.md",
+      "sha256": "ec0f6bc7f582dfde9071111dea3e291746a5310a33de7e79c64a5adb9dedecab"
+    },
+    {
+      "path": "harbor/print/handout-cards.html",
+      "sha256": "e99f5542c05da8c9ed1c3a1a6c03eb8cac2ef55cdf959a9ff0c1e612a8c0f404"
+    },
+    {
+      "path": "harbor/print/host-materials.html",
+      "sha256": "096202c04d563ec6a7e6e7b78721dd791a56edb0ddfb5a4401463ec08774990c"
+    },
+    {
+      "path": "harbor/print/player-materials.html",
+      "sha256": "ccee76c411a0295617c75c470061d2a4f9141ab27df23bd26b5854254238e5fd"
+    },
+    {
+      "path": "harbor/reviews/causality-final.md",
+      "sha256": "b3482b382e848ec9524c3eb288c0cb674e6c172e9b3f2b927ffba749a93aaba3"
+    },
+    {
+      "path": "harbor/reviews/causality-initial.md",
+      "sha256": "fb31d3c3000931b414c6931864c1300766124a59377d497638b328c4f8477e0e"
+    },
+    {
+      "path": "harbor/reviews/README.md",
+      "sha256": "cd96cb62c4bd6e0521f45fc0d71bd3a5df0d0fc12567647fc42152b5142dfcfe"
+    },
+    {
+      "path": "harbor/reviews/tabletop-walkthrough.md",
+      "sha256": "d681855a5ec87c6f0e7bdd926411ac2ebad603a489576399bedaab609083d97e"
+    },
+    {
+      "path": "harbor/table-board.md",
+      "sha256": "3b15c9759612a9566f70388114982544ccb531589fb318762785c3595b2c1bc4"
+    },
+    {
+      "path": "archive/README.md",
+      "sha256": "c171b0c79519e40917b004dcc7886983f6b1a00f60b4b97fbd0282aa7695c97e"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/active-work.md",
+      "sha256": "29ab70fa0f6b32e4c4d32cfa6d894dcb1c59786362f501df844b7a0e4f5da0b3"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/audit-clues.md",
+      "sha256": "63c6d8c69a8caf146997545de8f061359e9c385b4562ee9cf0404ac4fd70dc8b"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/audit-ref-1.md",
+      "sha256": "114b599fb414072400d03adb23b30a0990ccd83670a0cd100a2751ebfbf09c7e"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/audit-ref-2.md",
+      "sha256": "f5ce2148bd2edbe35dc208454d354ae1e9dd547ac21e7bb651575892de175326"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/audit-tworead-1.md",
+      "sha256": "9cd3e093ddc42ee20d3072fa35a02e6d297649e3d47289a986758a8855f06c82"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/blindtest-1.md",
+      "sha256": "4b2faaf0a2c268a8563f027c4eecc367daea8c91366c93f83313d40ce45845fa"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/blindtest-2.md",
+      "sha256": "3b1711a372df8813987049fd2f61463d2e2b050c769cf140b249786b89ca56b5"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/brainstorm/A.md",
+      "sha256": "149b44bf2f288d0dc0f3ca5624a8f093c920d9cb64d27c545dcc349ffb2707fa"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/brainstorm/B.md",
+      "sha256": "3bedf948a1946e67eed8662a916a38d2d9e1fc1142871f57c8f9dadf6cba468e"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/brainstorm/C.md",
+      "sha256": "4249735350bbc07d3d10f8be2d7ddb64686474b0fcaa34ab1aff04e331c6ea88"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/brainstorm.js",
+      "sha256": "7c643021146a47a0bc09062add66af65e504be88c8c005e5d3511c142b66ca1d"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/review-fairness.md",
+      "sha256": "a9436708d0f767e4bdc089a3647aa7fdc76e9efe6721b49c54b981dd31d74b97"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/review-structure.md",
+      "sha256": "cd6dc442b6bbbb550c7c7f242665b64e266573ec0a942a82e1091fc93fcc493d"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/review-surface.md",
+      "sha256": "f07fedbaa1af35c451b92b4aef829e96675288721f5360a52713e3c7660e127e"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/stage1-spec.js",
+      "sha256": "a0cb77d4b77ec61926e7a0ad2895607a56a2ad50f740ff0e5293d4b6363ddd06"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/stage1b-spec.js",
+      "sha256": "76b6a7c95301c8fffc8e3d50dee897c118e691e6daf83076b686c85c2f6f00e5"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/stage2-write.js",
+      "sha256": "9e5fdc48cac0ebcd367eb47f103c3c65bcc0bbef3e0f73521771bc04963140c0"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/stage3a-audit.js",
+      "sha256": "ca14e6537694686123f58cbae456094680acc9bca7762791306d07bbdc86379a"
+    },
+    {
+      "path": "archive/shouyan-v1/.scratch/stage3b-audit.js",
+      "sha256": "596c9afe647118f031d9e52bf14a7dfc791995ede8eec1f9e6f945fa5b0d0514"
+    },
+    {
+      "path": "archive/shouyan-v1/assets/logo.svg",
+      "sha256": "4467e59b7d97c3f11f17a54549e0655c4f7ec1f9337f23d461e9837af497fd33"
+    },
+    {
+      "path": "archive/shouyan-v1/CONTRIBUTING.md",
+      "sha256": "abf933055b7b39656fcd77482c1ef47400605a8f5808afdc260e3badf6cdf52c"
+    },
+    {
+      "path": "archive/shouyan-v1/idea.md",
+      "sha256": "6ca0aaaa8127de2750ff9b0ffe466d99f8a7ee76115886abad7b51c19fe6ce95"
+    },
+    {
+      "path": "archive/shouyan-v1/playthrough.md",
+      "sha256": "cd08c8c5d866081819ef00887261a901e632b25bd5efff6b47368591feaa74fd"
+    },
+    {
+      "path": "archive/shouyan-v1/README.md",
+      "sha256": "d064965cd0c6f2c8cf0335c4d3929e38823d735e43682274a3a0d0efd71633b1"
+    },
+    {
+      "path": "archive/shouyan-v1/README.zh-CN.md",
+      "sha256": "a76d816c0301b7fb0a7f54510391a6a035ae9147c26801343d5353c08307da20"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-bai.md",
+      "sha256": "1f1441fe96b9517b021c14dca144802a551abd7dab883716318efc036fda0b84"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-mutang.md",
+      "sha256": "aeb79620ebf3b7b77da7b4b98f8e03c65d54c6a532bd2ff5d18e1e13da41a76d"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-shuning.md",
+      "sha256": "40b2ce7b09570f632f241781acd28554c0652de27b671c4b1def542d3b000882"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-yurru.md",
+      "sha256": "bc3ce4b883b285eb159e8bed6a791de3715e275934469b9b723aaf786f3dcf1f"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-zonghan.md",
+      "sha256": "dfcddef2e8417e9aabf042c243bd92003dfd1b47ca15feff8346ac0973435ac4"
+    },
+    {
+      "path": "archive/shouyan-v1/script/book-zongqi.md",
+      "sha256": "a8ccaf09c40c5c4bda3ff6d11b47a28168fd6b90f66cb12023aa3405c4fe0aed"
+    },
+    {
+      "path": "archive/shouyan-v1/script/clue-cards.md",
+      "sha256": "8fdf02d704a1749115983b0dd652557f849017afffcd06ad5e7a5b150475f597"
+    },
+    {
+      "path": "archive/shouyan-v1/script/host-manual.md",
+      "sha256": "1226074f1979d96c45f5add944e4df45c15b234da696689c1e89d36ceac729f9"
+    },
+    {
+      "path": "archive/shouyan-v1/spec.md",
+      "sha256": "faae51d807b62af1232f4eefffbc55b259c0c48385606b159540a54165aec862"
+    },
+    {
+      "path": "archive/shouyan-v1/ying-yan.md",
+      "sha256": "fc41c7fa85721bef1f5fccf560c7719ef8cdae4ff56022bf4b469a2956040544"
+    }
+  ]
+}
